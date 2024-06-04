@@ -1,19 +1,18 @@
 'use client'
-import type { FC } from 'react'
-import React from 'react'
-import cn from 'classnames'
-import { useTranslation } from 'react-i18next'
+import Button from '@/app/components/base/button'
+import type { AppInfo } from '@/types/app'
 import {
   PencilIcon,
 } from '@heroicons/react/24/solid'
+import cn from 'classnames'
+import type { FC } from 'react'
+import { useTranslation } from 'react-i18next'
 import s from './style.module.css'
-import type { AppInfo } from '@/types/app'
-import Button from '@/app/components/base/button'
 
 export const AppInfoComp: FC<{ siteInfo: AppInfo }> = ({ siteInfo }) => {
   const { t } = useTranslation()
   return (
-    <div>
+    <div className='pb-4'>
       <div className='flex items-center py-2 text-xl font-medium text-gray-700 rounded-md'>👏 {t('app.common.welcome')} {siteInfo.title}</div>
       <p className='text-sm text-gray-500'>{siteInfo.description}</p>
     </div>

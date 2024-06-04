@@ -11,7 +11,7 @@ export const APP_INFO: AppInfo = {
 }
 
 export const isShowPrompt = true
-export const promptTemplate = '你能帮我分析一下这个表格吗？'
+export const promptTemplate = '你能做什么？'
 
 export const API_PREFIX = '/api'
 

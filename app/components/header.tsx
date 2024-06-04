@@ -1,10 +1,9 @@
-import type { FC } from 'react'
-import React from 'react'
 import {
   Bars3Icon,
   PencilSquareIcon,
 } from '@heroicons/react/24/solid'
-import AppIcon from '@/app/components/base/app-icon'
+import type { FC } from 'react'
+import React from 'react'
 export type IHeaderProps = {
   title: string
   isMobile?: boolean
@@ -30,7 +29,7 @@ const Header: FC<IHeaderProps> = ({
         )
         : <div></div>}
       <div className='flex items-center space-x-2'>
-        <AppIcon size="small" />
+        {/* <AppIcon size="small" /> */}
         <div className=" text-sm text-gray-800 font-bold">{title}</div>
       </div>
       {isMobile
