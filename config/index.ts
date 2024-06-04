@@ -3,8 +3,8 @@ export const APP_ID = `${process.env.NEXT_PUBLIC_APP_ID}`
 export const API_KEY = `${process.env.NEXT_PUBLIC_APP_KEY}`
 export const API_URL = `${process.env.NEXT_PUBLIC_API_URL}`
 export const APP_INFO: AppInfo = {
-  title: '允朵智慧 - 基础版',
-  description: '允朵智慧是一个专为允朵文化传媒有限公司开发的一款轻量级 AI 产品。',
+  title: 'YunChat',
+  description: 'YunChat 允朵智慧是一个专为允朵文化传媒有限公司开发的一款轻量级 AI 产品。',
   copyright: 'MindReset',
   privacy_policy: '',
   default_language: 'zh-Hans',
