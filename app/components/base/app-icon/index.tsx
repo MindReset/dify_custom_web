@@ -1,5 +1,5 @@
-import type { FC } from 'react'
 import classNames from 'classnames'
+import type { FC } from 'react'
 import style from './style.module.css'
 
 export type AppIconProps = {
@@ -28,7 +28,7 @@ const AppIcon: FC<AppIconProps> = ({
         background,
       }}
     >
-      🤖
+      ☁️
     </span>
   )
 }

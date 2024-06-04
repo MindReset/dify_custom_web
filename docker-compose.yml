@@ -1,0 +1,9 @@
+version: '3'
+services:
+    mindreset_yunduo:
+        build: .
+        image: mindreset_yunduo:latest
+        container_name: mindreset_yunduo
+        ports:
+            - '3000:3000'
+        restart: unless-stopped
