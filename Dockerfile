@@ -11,6 +11,7 @@ WORKDIR /app
 COPY package.json ./
 
 # 安装所有依赖
+RUN npm config set registry https://registry.npmmirror.com
 RUN pnpm install --reporter ndjson
 
 # 复制项目的其他文件
@@ -32,6 +33,7 @@ WORKDIR /app
 COPY package.json ./
 
 # 安装 pnpm 并安装生产依赖
+RUN npm config set registry https://registry.npmmirror.com
 RUN npm install -g pnpm && pnpm install --prod --reporter ndjson
 
 # 从构建阶段复制构建好的文件
